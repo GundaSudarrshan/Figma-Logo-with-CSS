@@ -6,7 +6,7 @@
 main {
   width: 100vw;
   height: 100vh;
-  background-color: #e4dfed;
+  background-color: #cdd8fa;
   /* background-color: aqua; */
   display: flex;
   justify-content: center;
@@ -15,54 +15,68 @@ main {
 }
 
 #logo_container {
-  width: 400px;
-  min-width: 400px;
-  /* height: 200px; */
+  width: 30%;
+  min-width: 30%;
+  /* height: 300px; */
   aspect-ratio: 1/1;
-  /* background-color: antiquewhite; */
+  background-color: #333333;
   display: flex;
   flex-wrap: wrap;
+  padding: 5%;
+  border-radius: 10px;
 }
-
-.semi-circle {
-  width: 200px;
-  height: 100px;
-  min-width: 50%;
-  /* background-color: #e12727c7; */
+#left-elements {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+#right-elements {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.left {
+  width: 30%;
+  height: 33%;
+  /* background-color: red; */
   /* border: 1px solid black; */
-  border-radius: 100px 100px 0 0;
+}
+.right {
+  width: 30%;
+  height: 33%;
+  /* background-color: orange; */
+  /* border: 1px solid beige; */
 }
 
-.upper {
-  transform: translatey(100%);
+#left-top {
+  background-color: #f24e1e;
+  width: 70%;
+  border-radius: 50% 0 0 50%;
+  border: none;
 }
-.lower {
-  transform: rotate(180deg);
+#left-middle {
+  background-color: #a259ff;
+  width: 70%;
+  border-radius: 50% 0 0 50%;
+  border: none;
 }
-
-#circle-1 {
-  background-color: #ffc718;
+#left-bottom {
+  background-color: #0acf83;
+  width: 70%;
+  border-radius: 50% 0 50% 50%;
 }
-#circle-2 {
-  background-color: hsl(5, 68%, 54%);
-  transform: translatex(-50%) rotate(90deg);
-  transform-origin: bottom;
+#right-top {
+  width: 70%;
+  background-color: #ff7262;
+  border-radius: 0 50% 50% 0;
+  /* border: none; */
 }
-#circle-3 {
-  background-color: #1ca45c;
-  transform: translateX(50%) rotate(270deg);
-  transform-origin: bottom;
-}
-#circle-4 {
-  background-color: #4486f4;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-top: 4rem;
-  color: hsl(0, 0%, 50%);
-}
-#darker-text {
-  /* font-weight: bolfder; */
-  color: hsl(0, 0%, 43%);
+#right-middle {
+  width: 67%;
+  background-color: #1abcfe;
+  border-radius: 100%;
 }
